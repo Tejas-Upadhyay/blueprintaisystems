@@ -1,0 +1,411 @@
+/* Blueprint AI System — Brand Styles */
+
+/* --- Reset & Base --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #1a1a1a;
+  background: #faf8f5;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* --- Typography --- */
+h1, h2, h3, h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #1a2a3a;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); margin-bottom: 1.5rem; }
+h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; }
+h4 { font-size: 1.1rem; font-weight: 600; }
+
+p { margin-bottom: 1rem; color: #3a3a3a; }
+
+.section-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.accent {
+  color: #b8653a;
+}
+
+/* --- Navigation --- */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(250, 248, 245, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e8e3dd;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #1a2a3a;
+  letter-spacing: -0.01em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9rem;
+}
+
+.nav-links a {
+  color: #5a5a5a;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #1a2a3a;
+}
+
+.btn-nav {
+  background: #1a2a3a;
+  color: #fff !important;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-nav:hover {
+  background: #2a3a4a !important;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  display: inline-block;
+  background: #1a2a3a;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.85rem 2rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #2a3a4a;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #b8653a;
+}
+
+/* --- Hero --- */
+.hero {
+  padding: 6rem 1.5rem 4rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.hero-sub {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #5a5a5a;
+  margin: 1.5rem 0 2rem;
+  max-width: 600px;
+}
+
+.hero-footnote {
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  margin-top: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* --- Logos Bar --- */
+.logos-bar {
+  border-top: 1px solid #e8e3dd;
+  border-bottom: 1px solid #e8e3dd;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.logos-bar p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8a8a8a;
+  margin-bottom: 1rem;
+}
+
+.logo-list {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+/* --- Problem --- */
+.problem {
+  background: #1a2a3a;
+  color: #e8e3dd;
+}
+
+.problem .section-inner {
+  text-align: center;
+}
+
+.problem h2 {
+  color: #d4c9bd;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.problem-text {
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  line-height: 1.6;
+  color: #f0ebe4;
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  font-style: italic;
+}
+
+.solution-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  color: #b8653a;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* --- Services --- */
+.services {
+  background: #fff;
+}
+
+.services .section-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.service-card {
+  border-left: 3px solid #e0d8ce;
+  padding-left: 1.5rem;
+}
+
+.service-num {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #b8653a;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  color: #5a5a5a;
+  max-width: 600px;
+}
+
+.service-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.85rem;
+  color: #8a8a8a;
+}
+
+/* --- About --- */
+.about {
+  background: #f4f0eb;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 700px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.about-text p {
+  color: #4a4a4a;
+}
+
+.detail-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0d8ce;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8a8a8a;
+  margin-bottom: 0.3rem;
+}
+
+/* --- How --- */
+.how {
+  background: #fff;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 700px) {
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #1a2a3a;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #5a5a5a;
+}
+
+/* --- Contact --- */
+.contact {
+  background: #1a2a3a;
+  color: #e8e3dd;
+}
+
+.contact h2 {
+  color: #f0ebe4;
+}
+
+.contact-sub {
+  color: #c4bab0;
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-or {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9rem;
+  color: #8a7a6a;
+  margin: 0;
+}
+
+.contact-or a {
+  color: #d4a373;
+}
+
+.contact-or a:hover {
+  color: #e0b88a;
+}
+
+/* --- Footer --- */
+footer {
+  background: #141e2a;
+  color: #8a7a6a;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-left .logo {
+  color: #c4bab0;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.footer-small {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8rem;
+  color: #6a5a4a;
+  margin: 0;
+}
+
+/* --- Misc --- */
+::selection {
+  background: #d4a373;
+  color: #1a1a1a;
+}
